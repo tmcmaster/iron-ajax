@@ -3,5 +3,8 @@
     "./iron-request.js": [
       "IronRequestElement"
     ]
-  }
+  },
+  "exclude": [
+    "src/**",
+  ]
 }
