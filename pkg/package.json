@@ -1,0 +1,42 @@
+{
+  "name": "@polymer/iron-ajax",
+  "description": "Makes it easy to make ajax calls and parse the response",
+  "version": "3.0.1",
+  "license": "BSD-3-Clause",
+  "files": [
+    "dist-*/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": true,
+  "keywords": [
+    "web-components",
+    "polymer",
+    "ajax"
+  ],
+  "homepage": "https://github.com/PolymerElements/iron-ajax",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-ajax.git"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "webmat": "^0.2.0",
+    "@polymer/iron-image": "^3.0.0-pre.26",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "@polymer/test-fixture": "^4.0.1",
+    "wct-browser-legacy": "^1.0.1",
+    "@polymer/gen-typescript-declarations": "^1.5.1",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.6.1",
+    "@pika/plugin-build-types": "^0.6.1",
+    "@pika/plugin-build-web": "^0.6.1",
+    "@pika/plugin-standard-pkg": "^0.6.1",
+    "@pika/types": "^0.6.1"
+  },
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js"
+}

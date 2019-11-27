@@ -7,10 +7,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/PolymerElements/iron-ajax.git"
+    "url": "git://github.com/tmcmaster/iron-ajax.git"
   },
-  "homepage": "https://github.com/PolymerElements/iron-ajax",
-  "name": "@polymer/iron-ajax",
+  "homepage": "https://github.com/tmcmaster/iron-ajax",
+  "name": "@wonkytech/iron-ajax",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "webmat": "^0.2.0",
@@ -18,17 +18,38 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "@polymer/test-fixture": "^4.0.1",
     "wct-browser-legacy": "^1.0.1",
-    "@polymer/gen-typescript-declarations": "^1.5.1"
+    "@polymer/gen-typescript-declarations": "^1.5.1",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.6.1",
+    "@pika/plugin-build-types": "^0.6.1",
+    "@pika/plugin-build-web": "^0.6.1",
+    "@pika/plugin-standard-pkg": "^0.6.1",
+    "@pika/types": "^0.6.1"
   },
   "scripts": {
     "format": "webmat",
     "generate-types": "gen-typescript-declarations --deleteExisting --outDir . --verify",
     "prepare": "npm run generate-types"
   },
-  "version": "3.0.1",
+  "version": "0.0.1",
   "main": "iron-ajax.js",
-  "author": "The Polymer Authors",
+  "author": "Tim McMaster",
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
+  },
+  "pika": true,
+  "sideEffects": true,
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
   }
 }
