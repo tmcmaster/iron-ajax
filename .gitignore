@@ -3,3 +3,4 @@ bower-*.json
 node_modules
 *.d.ts
 *.tgz
+.idea
