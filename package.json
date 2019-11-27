@@ -29,7 +29,10 @@
   "scripts": {
     "format": "webmat",
     "generate-types": "gen-typescript-declarations --deleteExisting --outDir . --verify",
-    "prepare": "npm run generate-types"
+    "prepare": "npm run generate-types",
+    "build": "pika build",
+    "version": "npm run build",
+    "publish": "pika publish"
   },
   "version": "0.0.1",
   "main": "iron-ajax.js",
