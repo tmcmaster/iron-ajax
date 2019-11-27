@@ -31,7 +31,7 @@
     "version": "npm run build",
     "publish": "pika publish"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "iron-ajax.js",
   "author": "Tim McMaster",
   "dependencies": {
