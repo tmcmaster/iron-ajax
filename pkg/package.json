@@ -1,7 +1,7 @@
 {
-  "name": "@polymer/iron-ajax",
+  "name": "@wonkytech/iron-ajax",
   "description": "Makes it easy to make ajax calls and parse the response",
-  "version": "3.0.1",
+  "version": "0.0.2",
   "license": "BSD-3-Clause",
   "files": [
     "dist-*/",
@@ -14,10 +14,10 @@
     "polymer",
     "ajax"
   ],
-  "homepage": "https://github.com/PolymerElements/iron-ajax",
+  "homepage": "https://github.com/tmcmaster/iron-ajax",
   "repository": {
     "type": "git",
-    "url": "git://github.com/PolymerElements/iron-ajax.git"
+    "url": "git://github.com/tmcmaster/iron-ajax.git"
   },
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
